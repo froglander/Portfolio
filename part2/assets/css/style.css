@@ -63,9 +63,38 @@ section {
 
 
 @media only screen and (max-width: 768px) {
-	/* Add your code here */
+	/* Now, using the media queries at the bottom of 
+	the assets/css/style.css file, make “Connect with me” 
+	move to the bottom and the background color change 
+	when the width decreases 768px or less. */
+	.content-wrapper { 
+		background-color: blue;	
+		/*max-width: 500px;	*/
+	}
+	aside {
+		display: block;
+		margin: 0 auto;
+	}
+	section {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 640px) {
-	/* Add your code here */
+	.content-wrapper { 
+		background-color: red;	
+		/*max-width: 500px;*/	
+	}
+	aside {
+		display: block;
+		margin: 0 auto;
+	}
+	section {
+		width: 100%;
+	}
+	.about-me img {
+		float: none;
+		padding: 10px;
+		width: 100%;
+	}
 }
