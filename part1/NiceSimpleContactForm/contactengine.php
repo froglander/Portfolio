@@ -3,15 +3,14 @@
 $EmailFrom = "bootcamp@dukworld.net";
 $EmailTo = "bootcamp@dukworld.net";
 $Subject = "Portfolio Contact Form";
-$Name = Trim(stripslashes($_POST['Name'])); 
-$Tel = Trim(stripslashes($_POST['Tel'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Message'])); 
+$Name = Trim(stripslashes($_POST['inputName'])); 
+$Email = Trim(stripslashes($_POST['inputEmail'])); 
+$Message = Trim(stripslashes($_POST['inputMessage'])); 
 
 // validation
 $validationOK=true;
 if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
   exit;
 }
 
@@ -20,8 +19,6 @@ $Body = "";
 $Body .= "Name: ";
 $Body .= $Name;
 $Body .= "\n";
-$Body .= "Tel: ";
-$Body .= $Tel;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $Email;
@@ -38,6 +35,6 @@ if ($success){
   print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
 }
 else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
 }
 ?>
