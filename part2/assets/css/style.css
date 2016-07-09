@@ -8,10 +8,10 @@ a {
 }
 aside {
 	display: inline;
-	width: 150px;
+	width: 150px;	
 }
 body {
-	background-image: url("../images/dark-blue-silk.jpg");
+	background-image: url("../images/dark_embroidery.png");
 	color: white;
 	font-family: 'Arima Madurai', cursive;
 }
@@ -47,25 +47,31 @@ section {
 }
 .connect img {
 	margin: 7px;
+	width: 121px;
+	-webkit-transition: width 2s;
+	transition: width 2s;
+}
+.connect img:hover {
+	width: 200px;
 }
 .container {
 	width: 100%;
 }
 .content-wrapper {
-	background-color: black;
-/*	border-left: 1px dashed grey;
-	border-right: 1px dashed grey;*/	
+	background-color: rgba(93, 93, 93, 0.6);
 	margin: 0 auto;
 	max-width: 768px;
 	padding: 15px;
 	width: 100%;
+	transition: width 1s linear; 
+    -webkit-transition: width 1s linear; 
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {	
 	.content-wrapper { 
-		background-color: blue;	
-		width: 75%;	
+		background-color: rgba(44, 123, 169, 0.6);	
+		width: 75%			
 	}
 	section {
 		width: 100%;
@@ -74,7 +80,7 @@ section {
 
 @media only screen and (max-width: 640px) {
 	.content-wrapper { 
-		background-color: red;	
+		background-color: rgba(99, 76, 158, 0.6);	
 		width: 75%;	
 	}
 	.about-me img {
