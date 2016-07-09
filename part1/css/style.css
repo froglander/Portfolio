@@ -76,7 +76,7 @@
 }
 
 .hovereffect:hover .overlay {
-	background-color: rgba(113, 147, 174, 0.4);
+	background-color: rgba(40, 96, 144, 0.4);
 }
 
 .hovereffect img {
@@ -85,54 +85,33 @@
 }
 
 .hovereffect h3 {
-	text-transform: uppercase;
-	color: #fff;
-	text-align: center;
-	position: relative;
-	font-size: 17px;
-	padding: 10px;
-	background: rgba(0, 0, 0, 0.6);
-	-webkit-transform: translateY(45px);
-	-ms-transform: translateY(45px);
-	transform: translateY(45px);
-	-webkit-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-}
-
-.hovereffect:hover h3 {
-	-webkit-transform: translateY(5px);
-	-ms-transform: translateY(5px);
-	transform: translateY(5px);
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .hovereffect a.info {
 	display: inline-block;
 	text-decoration: none;
-	padding: 7px 14px;
 	text-transform: uppercase;
 	color: #fff;
-	border: 1px solid #fff;
 	background-color: transparent;
 	opacity: 0;
 	filter: alpha(opacity=0);
-	-webkit-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
-	-webkit-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	font-weight: normal;
 	margin: -52px 0 0 0;
-	padding: 152px 200px;
+	padding: calc(100%);
 }
 
 .hovereffect:hover a.info {
 	opacity: 1;
 	filter: alpha(opacity=100);
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-}
-
-.hovereffect a.info:hover {
-	box-shadow: 0 0 5px #fff;
 }
