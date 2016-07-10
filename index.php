@@ -1,1 +1,0 @@
-<?php include_once("part1/index.html"); ?>
