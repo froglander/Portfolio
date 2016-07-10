@@ -23,10 +23,10 @@
 	color: #bebdc2;
 	text-shadow: 2px 2px #1b2911;
 }
+
 #secondaryTitle {
 	display: none;	
-	position: relative;
-	top: 300px;
+	position: relative;	
 }
 #secondaryTitle h2 {
 	color: #fbea91;
@@ -52,7 +52,7 @@
  a {
  	color: #3b566b;
  }
-/* Hover effect courtesy of https://miketricking.github.io/dist/ */
+/* Hover effect courtesy of https://miketricking.github.io/dist/ with modifications :) */
 .hovereffect {
 	width: 100%;
 	height: 100%;
